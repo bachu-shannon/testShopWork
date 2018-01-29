@@ -52,23 +52,23 @@ export default class User extends React.Component {
 	}
 
 	renderCellUser() {
-		const listItemKey = Object.keys(this.props.item);
-		return listItemKey.map((key) => {
+		const listUserKeys = Object.keys(this.props.item);
+		return listUserKeys.map((userKey) => {
 			if (this.state.isEditing) {
 				return (
-					(key === 'id') ?
-						<Table.Cell key={'user-' + this.props.index + '-' + key}>
-							{this.props.item[key]}
+					(userKey === 'id') ?
+						<Table.Cell key={'user-' + this.props.index + '-' + userKey}>
+							{this.props.item[userKey]}
 						</Table.Cell> :
-						<Table.Cell key={'user-edit-' + this.props.index + '-' + key}>
-							<Input size='small' name={key} defaultValue={this.props.item[key]}
+						<Table.Cell key={'user-edit-' + this.props.index + '-' + userKey}>
+							<Input size='small' name={userKey} defaultValue={this.props.item[userKey]}
 								   onChange={this.onHandleChange.bind(this)}/>
 						</Table.Cell>
 				)
 			}
 			return (
-				<Table.Cell key={'user-' + this.props.index + '-' + key}>
-					{this.props.item[key]}
+				<Table.Cell key={'user-' + this.props.index + '-' + userKey}>
+					{this.props.item[userKey]}
 				</Table.Cell>
 			)
 		});

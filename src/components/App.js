@@ -20,14 +20,14 @@ class Users extends React.Component {
 	}
 
 	renderUsers() {
-		let listItemKey = Object.keys(this.props.data.data[0]);
+		let tableHeaderTitles = Object.keys(this.props.data.data[0]);
 		return (
 			<Table celled>
 				<Table.Header>
 					<Table.Row>
-						{listItemKey.map((key, index) => {
-							if (key !== undefined)
-								return <Table.HeaderCell key={index}>{key}</Table.HeaderCell>;
+						{tableHeaderTitles.map((title, index) => {
+							if (title !== undefined)
+								return <Table.HeaderCell key={index}>{title}</Table.HeaderCell>;
 						})}
 						<Table.HeaderCell colSpan="2" key="actions">Actions</Table.HeaderCell>
 					</Table.Row>
