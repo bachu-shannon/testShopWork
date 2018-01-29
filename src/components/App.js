@@ -26,7 +26,7 @@ class Users extends React.Component {
 				<Table.Header>
 					<Table.Row>
 						{keyProps.map((key, index) => {
-							if(key !== undefined)
+							if (key !== undefined)
 								return <Table.HeaderCell key={index}>{key}</Table.HeaderCell>;
 						})}
 						<Table.HeaderCell colSpan="2" key="actions">Actions</Table.HeaderCell>
