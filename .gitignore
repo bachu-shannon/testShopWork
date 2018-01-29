@@ -1,0 +1,8 @@
+# phpstorm project files
+.idea
+
+# npm
+node_modules
+
+# public
+dist

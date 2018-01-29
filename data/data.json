@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "candidateName":"Peter Petrov",
+    "candidateStatus":"pending",
+    "candidateNeedOffer":1800
+  },
+  {
+    "id": 2,
+    "candidateName":"Ivan Ivanov",
+    "candidateStatus":"pending",
+    "candidateNeedOffer":3000
+  },
+  {
+    "id": 3,
+    "candidateName":"Roman Romanov",
+    "candidateStatus":"oninterview",
+    "candidateNeedOffer":2400
+  },
+  {
+    "id": 4,
+    "candidateName":"Konstantin Konstantinov",
+    "candidateStatus":"on_test_perdiod",
+    "candidateNeedOffer":3000
+  }
+]

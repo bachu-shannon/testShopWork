@@ -1,0 +1,40 @@
+{
+  "name": "webpack-redux",
+  "version": "1.0.0",
+  "description": "test webpack redux",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --env development --inline --hot --history-api-fallback",
+    "build": "webpack --env production",
+    "server": ""
+  },
+  "author": "shannon",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.11.2",
+    "html-webpack-plugin": "^2.30.1",
+    "react-bootstrap": "^0.31.2",
+    "style-loader": "^0.18.2",
+    "uglify-js": "^3.0.28",
+    "uglifyjs-webpack-plugin": "^0.4.6",
+    "webpack": "^3.5.5",
+    "webpack-dev-server": "^2.7.1",
+    "webpack-merge": "^4.1.0"
+  },
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "semantic-ui-css": "^2.2.14",
+    "semantic-ui-react": "^0.77.2"
+  }
+}
