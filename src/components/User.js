@@ -52,8 +52,8 @@ export default class User extends React.Component {
 	}
 
 	renderCellUser() {
-		const keys = Object.keys(this.props.item);
-		return keys.map((key) => {
+		const listItemKey = Object.keys(this.props.item);
+		return listItemKey.map((key) => {
 			if (this.state.isEditing) {
 				return (
 					(key === 'id') ?
