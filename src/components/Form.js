@@ -1,7 +1,7 @@
 import React from "react";
 import {connect} from 'react-redux';
 import {getDataRequest} from "../actions/UsersAction";
-import {FormGroup, PageHeader, FormControl} from "react-bootstrap";
+import {Input} from 'semantic-ui-react';
 
 
 class Form extends React.Component {
@@ -18,16 +18,10 @@ class Form extends React.Component {
 
 	render() {
 		return (
-			<form>
-				<FormGroup>
-					<PageHeader>Выберите файл</PageHeader>
-					<FormControl
-						type="file"
-						onChange={this.handleChange.bind(this)}
-					/>
-					<FormControl.Feedback/>
-				</FormGroup>
-			</form>
+			<Input
+				type="file"
+				onChange={this.handleChange.bind(this)}
+			/>
 		)
 	}
 
