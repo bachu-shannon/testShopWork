@@ -14,7 +14,6 @@ export function getDataRequest(data) {
 }
 
 export function updateDataRequest(data) {
-	console.log(data);
 	return {
 		type: UPDATE_USERS_REQUEST,
 		payload: {
